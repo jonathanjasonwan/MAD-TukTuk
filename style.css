@@ -1,0 +1,818 @@
+.ui-content{
+    padding: 0;
+    background-color: white;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+}
+/*//////////////////////////////////////////////////////////////////////// Page 0*/
+
+.pageZeroImg{
+    background-image: url('img/svg/pageZeroImg.svg');
+    height: 100%;
+    background-repeat:no-repeat;
+    background-size: cover; 
+}
+
+#pagezero{
+    height: 100%;
+}
+
+
+/*//////////////////////////////////////////////////////////////////////// Page 0 END*/
+
+/*//////////////////////////////////////////////////////////////////////// Page 1*/
+.infographic img{
+    width: 100%;
+}
+.infographic{
+    width: 60%;
+    margin: 0 auto;
+}
+
+#submitBtn{
+    background-image: url('img/svg/gradient1.svg');
+    background-repeat:no-repeat;
+    background-size: cover; 
+    color: white;
+    border: none; text-shadow: none;
+    background-color: #5E4DE4;
+    height: 3.5em;
+    font-size: 1.5em;
+    border-radius: 20px;
+    margin-top: 1em;  
+}
+
+
+.ui-input-text{
+    margin: 0;
+    /* border-width: 1px;
+    border-style: solid; */
+}
+
+#to_places{
+    color: #292263;
+    width: 100%;
+    height: 3.5em;
+    font-size: 1.5em;
+    background: url('img/icons/inputDestination.svg') no-repeat scroll 35px 35px;
+    background-size: 35px 35px;
+    padding-left:95px;
+    border-radius: 10px;
+    border: 5px solid #5E4DE4;
+}
+.ui-shadow-inset {
+    box-shadow:none;}
+.inputUser img{
+    height: 30%;
+}
+.inputUser{
+    height: 100%;
+    margin-left: 1.2em;
+    display: flex;
+    align-items: center;
+}
+
+#origin{
+    
+    padding-left: 0.5em;
+}
+.origin1{
+    color: #292263;
+    background-color: #fafafa;
+    width: 100%;
+    height: 3.5em;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 10px;
+}
+
+#distance_form{
+    width: 100%;
+    /* height: 10%; */
+}
+
+.textPage1{
+    width: 100%;
+    color: #292263;
+    margin-bottom: 60px;
+}
+.handle img{
+    display: block;
+    margin: auto;
+}
+.handle{
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(2.5);
+    z-index: 4;
+    padding: 2em 0;
+}
+
+#inputInfoContainer{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.pageOneContainer{
+    height: 55%;
+    width: 100%;
+    background-color: white;
+}
+
+#map_canvas{
+    height:45%;
+    padding:0;
+}
+
+#pageone{
+    height: 100%;
+}
+/*//////////////////////////////////////////////////////////////////////// Page 1 END*/
+/*//////////////////////////////////////////////////////////////////////// Page 2*/
+
+
+#bookingConfirmed{
+    background-image: url('img/svg/gradient1.svg');
+    background-repeat:no-repeat;
+    background-size: cover; 
+    color: white;
+    border: none; text-shadow: none;
+    background-color: #5E4DE4;
+    height: 3.5em;
+    font-size: 1.5em;
+    border-radius: 20px;
+    margin-top: 1em;  
+    width: 90%;
+    margin: 0 auto;
+}
+
+#currencyVal{
+    font-size: 2em;
+    font-weight: bold;
+    margin-left: 0.1em;
+}
+
+.currency{
+    font-size: 1.2em;
+}
+
+.priceContainer2{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 2em 0 1em;
+    color: #292263;
+}
+
+.hr2{
+    opacity: 0.4;
+    width: 100%;
+}
+
+.locationValue{
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.locationTitle{
+    text-transform: uppercase;
+
+}
+
+.locationsText2{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    margin-left: 2.5em;
+}
+
+.locationIcons2 img{
+    height: 20%;
+}
+
+.locationIcons2{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+}
+
+.locations2{
+    width: 90%;
+    margin: 0 auto;
+    height: 40%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.people{
+    text-transform: uppercase;
+    font-size: 3vw;
+    margin-right: 1em;
+}
+
+
+.taxiIcon2 .tuktukcar{
+    height: 50%;
+    margin-left: 10px;
+}
+
+.taxiIcon2 .taxiicon{
+    height: 50%;
+
+}
+
+.taxiIcon2{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 1em;
+}
+
+.tuktukService{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    box-shadow: 0px 0px 5px #888888;
+}
+
+#bookingContainer{
+    height: 42%;
+}
+
+.infoWindowDuration{
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 10px;
+    background-color: #5E4DE4;
+    color: white;
+    font-size: 24px;
+    padding: 0.5em;
+    border-radius: 10px;
+
+}
+
+.infoWindowDistance{
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #292263;
+    color: white;
+    font-size: 24px;
+    padding: 0.5em;
+    border-radius: 10px;
+}
+
+.infoWindowValue{
+    font-size: 24px;
+    color: #292263;
+}
+
+.infoWindowTitle{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    color: #292263;
+    margin-bottom: 10px;
+}
+
+#backBtn2{
+    position: absolute;
+    top: 3em;
+    left: 3em;
+    z-index: 4;
+    transform: scale(2.5);
+}
+
+#directions-canvas{
+    height: 58%;
+}
+
+#directionsPage{
+    height: 100%;
+}
+/*//////////////////////////////////////////////////////////////////////// Page 2 END*/
+/*//////////////////////////////////////////////////////////////////////// Page 3 */
+
+
+
+#taxiArrivedBtn{
+    background-image: url('img/svg/gradient1.svg');
+    background-repeat:no-repeat;
+    background-size: cover; 
+    color: white;
+    border: none; text-shadow: none;
+    background-color: #5E4DE4;
+    height: 3.5em;
+    font-size: 1.5em;
+    border-radius: 20px;
+    margin-top: 1em;  
+    width: 90%;
+    margin: 0 auto;
+}
+
+.driverPlate{
+    margin-right: 1.5em;
+    padding: 0.8em;
+    background-color: #292263;
+    color: white;
+    font-size: 1.5em;
+    border-radius: 30px;
+}
+
+.driverCarType{
+    height: 30%;
+    font-size: 3vw;
+}
+
+.driverRating img{
+    height: 1.2em;
+    margin-left: 0.3em;
+}
+
+.driverRating{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-left: 1em;
+    font-size: 1.5em;
+}
+
+.driverName{
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+.namerating{
+    display: flex;
+    flex-direction: row;
+    height: 30%;
+}
+
+.driverOtherDetailsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+    margin-left: 1em;
+}
+
+.driverImgContainer img{
+    height: 100%;
+}
+
+.driverImgContainer{
+    height: 70%;
+    margin-left: 1em;
+}
+
+.driverInfo{
+    display: flex;
+    align-items: center;
+    height: 80%;
+}
+
+.driverDetails{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 50%;
+}
+
+#driverTimingVal{
+    margin-right: 1em;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.driverAlert2{
+    font-size: 2.5vw;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+.driverAlert1{
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.driverTimingContentText{
+    margin-left: 0.7em;
+}
+
+.driverTimingContentImg img{
+    height: 100%;
+    margin-left: 1em;
+}
+
+.driverTimingContentImg{
+    height: 50%;
+}
+
+.driverTimingContent{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    height: 100%;
+}
+
+.driverTiming{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 25%;
+    z-index: 4;
+    box-shadow: 0px 0px 10px #888888;
+}
+
+#pageThreeContainer{
+    height: 35%;
+    display: none;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#taxiToUserMap{
+    height: 100%;
+    background-image: url('img/svg/findingTaxi.svg');
+    background-repeat:no-repeat;
+    background-size: cover; 
+}
+#pagethree{
+    height: 100%;
+}
+/*//////////////////////////////////////////////////////////////////////// Page 3 END*/
+
+/*//////////////////////////////////////////////////////////////////////// Page 4*/
+
+.infoWindowTimings{
+    font-size: 2em;
+    display: block;
+    margin-top: 0.5em;
+    color: #5E4DE4;
+    font-weight: bold;
+}
+
+#journeyComplete{
+    background-image: url('img/svg/gradient1.svg');
+    background-repeat:no-repeat;
+    background-size: cover; 
+    color: white;
+    border: none; text-shadow: none;
+    background-color: #5E4DE4;
+    height: 3.5em;
+    font-size: 1.5em;
+    border-radius: 20px;
+    margin-top: 1em;  
+    width: 90%;
+    margin: 0 auto;
+}
+.page4ButtonContainer{
+    width: 100%;
+    margin-top: 2em;
+}
+
+.driverRatingScore4{
+    font-size: 1.2em;
+}
+
+.driverRating4 img{
+    margin-left: 0.3em;
+    height: 1.2em;
+}
+
+.driverInfo4 img{
+    margin-right: 1em;
+}
+
+.driverName4{
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+.carInfo4{
+    font-size: 1.1em;
+    color: #292263;
+    height: 15%;
+    margin-top: 2em;
+}
+
+.driverRating4{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 0.3em;
+}
+
+.driverInfo4{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 50%;
+    justify-content: center;
+}
+
+.timingVal{
+    text-transform: uppercase;
+    color: #66DD39;
+    font-weight: bold;
+    font-size: 4vw;
+}
+
+.timing4{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    height: 25%;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 0px 10px #888888;
+}
+
+.pageFourContainer{
+    height: 35%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 100%;
+}
+
+#journey-canvas{
+    height: 65%;
+}
+
+#pagefour{
+    height: 100%;
+}
+/*//////////////////////////////////////////////////////////////////////// Page 4 END*/
+
+/*//////////////////////////////////////////////////////////////////////// Page 5*/
+
+.userRatingTemplate img{
+    height: 100%;
+    margin: 0 0.5em;
+}
+
+.userRatingTemplate{
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 3em;
+}
+
+.popupTextContent{
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.popupTextHeader{
+    font-size: 2em;
+    padding: 1em 0 0.5em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.closePopup img{
+    height: 2em;
+}
+
+.closePopup{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 1em;
+    background-color: white;
+}
+
+.popupContainer{
+    background-color: white;
+    padding: 1.5em;
+    z-index: 10;
+}
+
+.ui-dialog-contain {
+    width: 100%;
+    margin: 10% auto 1em auto;
+    padding: 0;
+    position: relative;
+    top: 12em;
+    left: 1.2em;
+    z-index: 10;
+    max-width: none;
+}
+
+#popupBasic{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding: 3em;
+}
+
+#returnHome{
+    color: #292263;
+    border: none;
+    text-shadow: none;
+    background-color: white;
+    height: 3.5em;
+    font-size: 1.5em;
+    border-radius: 20px;
+    margin-top: 1em;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.page5ButtonContainer{
+    width: 100%;
+    height: 55%;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+.locationsText5{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    margin-left: 2.5em;
+}
+
+.locationIcons5 img{
+    height: 20%;
+}
+
+.locationIcons5{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+}
+
+.locations5{
+    width: 90%;
+    margin: 0 auto;
+    height: 25%;
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 1.3em;
+}
+
+.fare5{
+    font-weight: bold;
+}
+
+.rideDetails5{
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+
+.page5Container2{
+    height: 55%;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #292263;
+    color: white;
+    align-items: center;
+}
+
+.ui-page-theme-a{
+    text-shadow: none;
+}
+
+.tuktukCar5 img{
+    height: 50%;
+}
+
+.tuktukCar5{
+    height: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.carCarPlate5{
+    opacity: 0.8;
+    font-size: 1.2em;
+}
+
+.userRating img{
+    height: 50%;
+}
+
+.userRating{
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.driverName5{
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+.driverImgContainer5 img{
+    height: 100%;
+}
+
+.driverImgContainer5{
+    height: 20%;
+    margin-bottom: 1em;
+}
+
+.driverDetailsContainer5{
+    height: 45%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #5E4DE4;
+    color: white;
+}
+
+#pagefive{
+    height: 100%;
+}
+
+/*//////////////////////////////////////////////////////////////////////// Page 5 END*/
+
+
+
+/* Styling for popups on pages 3 & 4 */
+#popupBasicPage3{
+    display: none;
+    width: 80%;
+    margin: 0 auto;
+    padding: 3em;
+}
+
+#popupBasicPage4{
+    display: none;
+    width: 80%;
+    margin: 0 auto;
+    padding: 3em;
+}
+/* Styling for popups on pages 3 & 4 END*/
+
+/* Styling for autocomplete */
+.pac-matched {
+    font-weight: 700;
+}
+
+.pac-item {
+    cursor: default;
+    padding: 1em 1em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 30px;
+    text-align: left;
+    border-top: 1px solid #e6e6e6;
+    margin-left: 20px;
+    color: #292263;
+}
+
+.pac-item-query {
+    font-size: 3em;
+    padding-right: 3px;
+    color: #292263;
+}
+
+.pac-icon-marker {
+    background-position: -1px -161px;
+}
+
+.pac-icon {
+    width: 15px;
+    height: 20px;
+    transform: scale(1.5);
+    margin: 0.5em 1em;
+    display: inline-block;
+    vertical-align: top;
+    background-image: url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons.png);
+    background-size: 34px;
+}
+
+.pac-container {
+    background-color: #fff;
+    color: #491CE3;
+    position: absolute!important;
+    z-index: 1000;
+    border-radius: 2px;
+    border-top: 1px solid #d9d9d9;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Styling for autocomplete END */

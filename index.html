@@ -1,0 +1,351 @@
+<html>
+<head>
+	<title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.css">
+    <script src="jquery-1.11.3.min.js"></script>
+    <script src="jquery.mobile-1.4.5.js"></script>
+    <!-- Add fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUF0-L5xCgdpfwjXO0bkTo7wsPoyBd5ls&libraries=geometry,places"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="main.js"></script> -->
+    <script src="page0.js"></script>
+    <script src="page1.js"></script>
+    <script src="page2.js"></script>
+    <script src="page3.js"></script>
+    <script src="page4.js"></script>
+    <script src="page5.js"></script>
+
+</head>
+<body>
+
+  <!--Page zero ------------------------------------------------------------------------------------------------------>
+  <div data-role="page" id="pagezero">
+    <div data-role="main" class="ui-content">
+      <div class="pageZeroImg">
+      </div>
+    </div>
+  </div>
+
+  <!--Page zero END ------------------------------------------------------------------------------------------------------>
+    
+
+    <!-- Page One Start -------------------------------------------------------------------------------------------------->
+    <div data-role="page" id="pageone">
+       
+        <div data-role="main" class="ui-content">
+
+              <div id='content'>
+                  <div id='map_canvas'></div>
+              </div>
+              <div class="pageOneContainer">
+                <div id="inputInfoContainer">
+                  <div class="handle">
+                    <img src="img/icons/handle.png">
+                  </div>
+                  <div class="textPage1">
+                    <h1>Where would you like to go?</h1>
+                  </div>
+                  <form id="distance_form"><!--Include all inputs-->
+                      <div class="origin1">
+                        <span class="inputUser"><img src="img/icons/inputUser.svg"></span>
+                        <span id="origin">Current Location</span> <!--User location-->
+                      </div>
+                      <div class="form-group input1">
+                        <div class="inputField1"><!--input field-->
+                          <input class="form-control" id="to_places" placeholder="Enter a location"/>
+                          <input id="destination" name="destination" required="" type="hidden"/>
+                        </div>
+                        
+                      </div>
+
+                      <button id="submitBtn">Confirm Position</button>
+                  </form>
+                  <div class="infographic">
+                    <img src="img/svg/tuktukInfographic.svg">
+                  </div>
+                </div>
+                
+              </div>
+        </div>
+    </div>
+  <!-- Page One End --------------------------------------------------------------------------------------->  
+  <!-- Start of second page --------------------------------------------------------------------------->
+<div data-role="page" id="directionsPage">
+
+  <div data-role="header">
+    <img src="img/icons/backBtn.svg" id="backBtn2">
+  </div>
+  
+    <div role="main" class="ui-content">
+      <div id="directions-canvas"></div>
+      <div id="bookingContainer">
+        <div class="tuktukService">
+          <div class="taxiIcon2">
+            <img src="img/icons/taxiIcon.svg" class="taxiicon">
+            <img src="img/icons/tuktukCar.svg" class="tuktukcar">
+          </div>
+          <div></div>
+
+            <span class="people">1-4 People</span>
+
+        </div>
+        <div class="locations2">
+          <div class="locationIcons2">
+            <img src="img/icons/userLocationIcon.svg">
+            <img src="img/icons/tripledotIcon.svg">
+            <img src="img/icons/destinationIcon.svg">
+          </div>
+          <div class="locationsText2">
+            <div>
+              <div class="locationTitle">Pickup Location</div>
+              <div id="userLocationValue" class="locationValue"></div>
+            </div>
+            <div>
+              <div class="locationTitle">Destination</div>
+              <div id="userDestinationValue" class="locationValue"></div>
+            </div>
+          </div>
+        </div>
+        <hr class="hr2">
+        <div class="priceContainer2">
+          <span class="currency">SGD</span>
+          <span id="currencyVal"></span>
+        </div>
+        <button id="bookingConfirmed">Confirm Booking</button>
+      </div>
+    </div>
+
+</div>
+<!-- End of Page two ----------------------------------------------------------------------------------------->
+    <!-- Page Three Start ------------------------------------------------------------------------------------>
+  <div data-role="page" id="pagethree">
+    <div data-role="dialog" id="popupBasicPage3" data-transition="pop" data-dismissible="false">
+      <div class="popupContainer">
+        <div class="closePopup">
+          <img src="img/icons/crossBtn.svg" id="closePopup">
+        </div>
+        <div class="popupText">
+          <div class="popupTextHeader">
+            Your Driver has Arrived
+          </div>
+          <div class="popupTextContent">
+            Enjoy your journey!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <div id="taxiToUserMap"></div>
+      <div id="pageThreeContainer">
+
+        <div class="driverTiming">
+          <div class="driverTimingContent">
+            <div class="driverTimingContentImg">
+              <img src="img/icons/taxiIcon.svg">
+            </div>
+            <div class="driverTimingContentText">
+              <div class="driverAlert1">
+                Driver is on the way
+              </div>
+              <div  class="driverAlert2">
+                Head towards the pickup point
+              </div>
+            </div>
+          </div>
+
+          <div></div>
+
+          <div id="driverTimingVal">
+          </div>
+        </div>
+        <!-- Driver data -->
+        <div class="driverDetails">
+          <div class="driverInfo">
+              <div class="driverImgContainer">
+                <img id="driverImg">
+              </div>
+              <div class="driverOtherDetailsContainer">
+                <div class="namerating">
+                  <div class="driverName"></div>
+                  <div class="driverRating">
+                    <div class="driverRatingScore"></div>
+                    <div><img src="img/icons/star.svg"></div>
+                  </div>
+                </div>
+                <div class="driverCarType"></div>
+              </div>
+          </div>
+
+          <div></div>
+          <div class="driverPlate"></div>
+        </div>
+        <!-- Driver data END-->
+        <div>
+          <button class="ui-btn" id="taxiArrivedBtn">Taxi Has Arrived</button>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+<!-- Page Three End ---------------------------------------------------------------------------------->   
+    <!-- Page four Start ----------------------------------------------------------------------------->
+    <div data-role="page" id="pagefour">
+
+      <div data-role="dialog" id="popupBasicPage4" data-transition="pop" data-dismissible="false">
+        <div class="popupContainer">
+          <div class="closePopup">
+            <img src="img/icons/crossBtn.svg" id="closePopup">
+          </div>
+          <div class="popupText">
+            <div class="popupTextHeader">
+              Your driver has reached the destination
+            </div>
+            <div class="popupTextContent">
+              Click the button to confirm your trip has ended
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div data-role="main" class="ui-content">
+        <div id="journey-canvas"></div>
+        <div class="pageFourContainer">
+          <div class="timing4">
+            <div class="timingVal"></div>
+            <div style="font-size: 1.2em;">
+              Expected Drop Off
+            </div>
+          </div>
+
+          <div class="carInfo4">
+            <span class="carplate4"></span>
+            <span>&#x25cf</span>
+            <span class="cartype4"></span>
+          </div>
+
+          <div class="driverInfo4">
+            <div>
+              <img class="driverImg4">
+            </div>
+            <div>
+              <div class="driverName4">
+                
+              </div>
+              <div class="driverRating4">
+                <div class="driverRatingScore4"></div>
+                <div><img src="img/icons/star.svg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="page4ButtonContainer">
+            <button class="ui-btn" id="journeyComplete">I Have Safely Arrived</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Page four End ------------------------------------------------------------------------------->  
+<!--Page five Start-------------------------------------------------------------------------------->
+<div data-role="page" id="pagefive">
+
+  <div data-role="dialog" id="popupBasic" data-transition="pop" data-dismissible="false">
+    <div class="popupContainer">
+      <div class="closePopup">
+        <img src="img/icons/crossBtn.svg" id="closePopup">
+      </div>
+      <div class="popupText">
+        <div class="popupTextHeader">
+          How was your ride?
+        </div>
+        <div class="popupTextContent">
+          Help tuktuk improve your experience
+        </div>
+      </div>
+      <div class="userRatingTemplate">
+        <img src="img/rating/starTemplate.svg" id="oneStar">
+        <img src="img/rating/starTemplate.svg" id="twoStar">
+        <img src="img/rating/starTemplate.svg" id="threeStar">
+        <img src="img/rating/starTemplate.svg" id="fourStar">
+        <img src="img/rating/starTemplate.svg" id="fiveStar">
+      </div>
+    </div>
+  </div>
+
+
+  <div data-role="main" class="ui-content">
+    <div class="driverDetailsContainer5">
+      <div class="driverImgContainer5">
+        <img class="driverImg5">
+      </div>
+      <div class="driverName5">Chng Wilson</div>
+      <div class="userRating">
+        <img id="userRatingScore">
+      </div>
+      <div class="carCarPlate5">
+        <span class="carPlate5">SLU6996J</span>
+        <span>&#x25cf</span>
+        <span class="carType5">Toyota Prius Alpha Hybrid</span>
+      </div>
+      <div class="tuktukCar5">
+        <img src="img/icons/tuktukCar5.svg">
+      </div>
+    </div>
+    <div class="page5Container2">
+
+      <div class="rideDetails5">
+        <div class="fare5Container">
+          <span>Fare: </span>
+          <span class="fare5">SGD
+            <span class="fareVal5"></span>
+          </span>
+        </div>
+
+        <div></div>
+        
+        <div class="distanceDurationContainer5">
+          <span class="distance5">25.1km</span>
+          <span>&#x25cf</span>
+          <span class="duration5">30mins</span>
+        </div>
+      </div>
+
+      <div class="locations5">
+        <div class="locationIcons5">
+          <img src="img/icons/userLocationIcon.svg">
+          <img src="img/icons/tripledotIconDark.svg">
+          <img src="img/icons/destinationIcon.svg">
+        </div>
+        <div class="locationsText5">
+          <div>
+            <div class="locationTitle">Pickup Location</div>
+            <div id="userLocationValue5" class="locationValue"></div>
+          </div>
+          <div>
+            <div class="locationTitle">Destination</div>
+            <div id="userDestinationValue5" class="locationValue"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page5ButtonContainer">
+        <button class="ui-btn" id="returnHome">Return Home</button>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+      
+
+<!--Page five END------------------------------------------------------------------------------------->
+
+
+
+
+</body>
+</html>
